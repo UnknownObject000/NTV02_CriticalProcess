@@ -11,6 +11,9 @@ NTAPI系统关键进程视频源代码，用于演示未公开的API
 VOID RtlSetProcessIsCritical(BOOLEAN NewValue, PBOOLEAN OldValue, BOOLEAN IsWinlogon);
 ```
 
+### 所在DLL
+ - ntdll.dll
+
 ## 关于RtlSetThreadIsCritical
 
 ### 函数原型
@@ -24,6 +27,9 @@ VOID RtlSetThreadIsCritical(BOOLEAN NewValue, PBOOLEAN OldValue, BOOLEAN IsWinlo
 ```c++
 NTSTATUS NtQueryInformationProcess(IN HANDLE ProcessHandle, IN PROCESSINFOCLASS ProcessInformationClass, OUT PVOID ProcessInformation, IN ULONG ProcessInformationLength, OUT PULONG ReturnLength);
 ```
+
+### 所在DLL
+ - ntdll.dll
 
 ### 未导出类型
 ```c++
@@ -132,6 +138,9 @@ enum PROCESSINFOCLASS
 	MaxProcessInfoClass = 0x64
 };
 ```
+
+### 所在DLL
+ - ntdll.dll
 
 ### 特殊说明
 ```NtQueryInformationProcess```函数及其未导出类型也可在```winternl.h```中找到。
