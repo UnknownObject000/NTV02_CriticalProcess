@@ -21,15 +21,15 @@ VOID RtlSetProcessIsCritical(BOOLEAN NewValue, PBOOLEAN OldValue, BOOLEAN IsWinl
 VOID RtlSetThreadIsCritical(BOOLEAN NewValue, PBOOLEAN OldValue, BOOLEAN IsWinlogon);
 ```
 
+### 所在DLL
+ - ntdll.dll
+
 ## 关于NtQueryInformationProcess
 
 ### 函数原型
 ```c++
 NTSTATUS NtQueryInformationProcess(IN HANDLE ProcessHandle, IN PROCESSINFOCLASS ProcessInformationClass, OUT PVOID ProcessInformation, IN ULONG ProcessInformationLength, OUT PULONG ReturnLength);
 ```
-
-### 所在DLL
- - ntdll.dll
 
 ### 未导出类型
 ```c++
